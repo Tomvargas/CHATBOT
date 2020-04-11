@@ -12,4 +12,5 @@ bot=ChatBot(
 	database = "./database.accdb")
 
 while True:
-	print ('bot: ',bot.get_response(None))
+	r=bot.get_response(input(">> "))
+	print ('bot: ',r)
