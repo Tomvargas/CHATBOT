@@ -9,8 +9,7 @@ bot=ChatBot(
 	],
 	input_adapter = "chatterbot.input.TerminalAdapter",
 	output_adapter = "chatterbot.output.TerminalAdapter",
-	database = "./database.accdb"
-)
+	database = "./database.accdb")
 
 while True:
 	print ('bot: ',bot.get_response(None))
