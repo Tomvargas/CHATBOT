@@ -5,11 +5,8 @@ bot=ChatBot(
 	storage_adapter = "chatterbot.storage.SQLStorageAdapter",
 	logic_adapter = [
 		"chatterbot.logic.BestMatch",
-		"chatterbot.logic.TimeLogicAdapter",
 		"chatterbot.logic.MathematicalEvaluation"
 	],
-	input_adapter = "chatterbot.input.TerminalAdapter",
-	output_adapter = "chatterbot.output.TerminalAdapter",
 	database = "./database.accdb")
 
 def main():
@@ -25,11 +22,8 @@ def main():
     
 
 	def res():
-		Us=usr.get()
-		re=bot.get_response("holaaa")
-		r.set(re)
+		r.set(bot.get_response(usr.get()))
 
-		
 	Label(root,text="CHAT-BOT").pack()
 	Label(root,text="").pack()
 	Label(root,text="Message").pack()
