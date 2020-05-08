@@ -32,11 +32,13 @@ def main():
 				Label(root,text="").pack()"""
 	avtr=PhotoImage(file="graphics/avtr.png")
 	Label(root, image=avtr,bg="#282923").place(x=98,y=136)
-	Entry(root,textvariable=usr,bg="#46483d",fg="white",relief=FLAT, width=30,font=(20)).place(x=50, y=538)
+	ent=Entry(root,textvariable=usr,bg="#46483d",fg="white",relief=FLAT, width=30,font=(20))
+	ent.place(x=50, y=538)
+	
 	
 	Label(root,textvariable=r,bg="#282923",fg="white",font=(25)).place(x=100,y=350)
-	Button(root,text="►", command=res,relief=FLAT,bg="#18a1d3",fg="white",font=(25)).place(x=320,y=534)
-
+	but=Button(root,text="►", command=res,relief=FLAT,bg="#18a1d3",fg="white",font=(25))
+	but.place(x=320,y=534)
 	root.mainloop()
 
 main()
