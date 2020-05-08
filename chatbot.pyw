@@ -4,10 +4,10 @@ bot=ChatBot(
 	"AI",
 	storage_adapter = "chatterbot.storage.SQLStorageAdapter",
 	logic_adapter = [
-		"chatterbot.logic.BestMatch",
+		"chatterbot.logic.TimeLogicAdapter",
 		"chatterbot.logic.MathematicalEvaluation"
 	],
-	database = "./database.accdb")
+	database_uri = "sqlite:///chatbot.sqlite3")
 
 def main():
 	root=Tk()
