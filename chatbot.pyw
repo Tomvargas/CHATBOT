@@ -38,7 +38,7 @@ def main():
 	
 	Label(root,textvariable=r,bg="#282923",fg="white",font=(25)).place(x=100,y=350)
 	but=Button(root,text="►", command=res,relief=FLAT,bg="#18a1d3",fg="white",font=(25))
-	but.place(x=320,y=534)
+	but.place(x=320,y=534) 
 	root.mainloop()
 
 main()
